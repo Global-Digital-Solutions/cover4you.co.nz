@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 56" fill="none">
+  <defs><linearGradient id="co" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1e3a5f"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient></defs>
+  <rect x="2" y="8" width="36" height="36" rx="10" fill="url(#co)"/>
+  <rect x="9" y="22" width="6" height="12" rx="1" fill="white" opacity="0.9"/>
+  <rect x="17" y="17" width="6" height="17" rx="1" fill="white" opacity="0.9"/>
+  <rect x="25" y="14" width="6" height="20" rx="1" fill="white" opacity="0.9"/>
+  <rect x="8" y="34" width="24" height="1.5" rx="0.75" fill="white" opacity="0.5"/>
+  <text x="46" y="28" font-family="system-ui,sans-serif" font-weight="700" font-size="13" fill="#1e293b">Company<tspan fill="#7c3aed">Insurance</tspan></text>
+  <text x="46" y="42" font-family="system-ui,sans-serif" font-weight="500" font-size="10" fill="#64748b" letter-spacing="2">.co.nz</text>
+</svg>

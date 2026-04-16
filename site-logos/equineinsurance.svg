@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 56" fill="none">
+  <defs><linearGradient id="ei" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#d97706"/></linearGradient></defs>
+  <rect x="2" y="8" width="36" height="36" rx="10" fill="url(#ei)"/>
+  <path d="M24 13 C27 13 28 15 28 17 C28 18 27.5 19 26.5 19.5 L26 22 L23 22 L23 19 C22 19 21 18 21 17 C20 18 20 20 21 21 L21 28 L18 28 L18 22 L16 22 L13 18 C13 15 15 13 18 13 C19.5 13 21 14 22 15 C22.5 14 23 13 24 13 Z" fill="white" opacity="0.9"/>
+  <circle cx="15" cy="19" r="1" fill="#b45309" opacity="0.6"/>
+  <text x="46" y="28" font-family="system-ui,sans-serif" font-weight="700" font-size="13" fill="#1e293b">Equine<tspan fill="#b45309">Insurance</tspan></text>
+  <text x="46" y="42" font-family="system-ui,sans-serif" font-weight="500" font-size="10" fill="#64748b" letter-spacing="2">.co.nz</text>
+</svg>
