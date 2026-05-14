@@ -1,0 +1,248 @@
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import { sites, categories, categoryColours } from '@/data/sites'
+
+export const metadata: Metadata = {
+  title: 'Cover4You — New Zealand\'s Insurance Web Portfolio',
+  description: 'Cover4You operates a portfolio of specialist insurance comparison and lead-generation websites across New Zealand. Partner with us to reach qualified insurance buyers.',
+  alternates: { canonical: 'https://www.cover4you.co.nz/' },
+}
+
+const stats = [
+  { value: '25+', label: 'Live websites' },
+  { value: '3', label: 'Countries' },
+  { value: '50k+', label: 'Monthly visitors' },
+  { value: '100%', label: 'NZ-focused' },
+]
+
+const partnerTypes = [
+  {
+    icon: '🏢',
+    title: 'Insurance Companies',
+    body: 'Reach thousands of qualified buyers already searching for your products. We drive high-intent traffic to niche insurance verticals.',
+  },
+  {
+    icon: '🤝',
+    title: 'Insurance Brokers',
+    body: 'Receive warm, pre-qualified leads from consumers actively comparing cover options. We handle marketing — you handle the advice.',
+  },
+  {
+    icon: '📊',
+    title: 'Comparison Platforms',
+    body: 'White-label our traffic or co-brand specific sites. We\'re open to integration and revenue-share arrangements.',
+  },
+]
+
+export default function HomePage() {
+  const nzSites = sites.filter((s) => s.market === 'NZ')
+  const intlSites = sites.filter((s) => s.market !== 'NZ')
+
+  return (
+    <>
+      {/* Hero */}
+      <section className="relative bg-gradient-to-br from-green-900 via-green-800 to-green-700 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -translate-y-1/2 translate-x-1/2" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full translate-y-1/2 -translate-x-1/2" />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+          <span className="inline-block bg-green-600/40 border border-green-400/40 text-green-200 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+            Insurance Web Portfolio
+          </span>
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+            Connecting NZ insurance buyers<br className="hidden md:block" /> with the right advice
+          </h1>
+          <p className="text-xl text-green-100 max-w-2xl mx-auto mb-10 leading-relaxed">
+            Cover4You operates a growing portfolio of specialist insurance websites — each one a focused, high-intent destination that connects consumers with licensed NZ advisers and brokers.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="#portfolio" className="bg-white text-green-800 hover:bg-green-50 font-bold px-8 py-4 rounded-xl transition-colors text-lg">
+              View Our Sites
+            </Link>
+            <Link href="/contact/" className="border-2 border-white/60 hover:border-white text-white font-bold px-8 py-4 rounded-xl transition-colors text-lg">
+              Partner With Us
+            </Link>
+          </div>
+        </div>
+
+        {/* Stats bar */}
+        <div className="relative border-t border-green-700/60 bg-green-900/40">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+              {stats.map((s) => (
+                <div key={s.label}>
+                  <div className="text-4xl font-extrabold text-white">{s.value}</div>
+                  <div className="text-green-300 text-sm mt-1">{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section id="about" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-4xl font-extrabold text-gray-900 mb-6">
+                Who we are
+              </h2>
+              <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                Cover4You is a New Zealand digital publishing company specialising in insurance lead generation. We build and operate authoritative, niche insurance websites that rank for high-intent search queries and connect consumers with qualified, licensed advisers.
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                We don't sell insurance directly — our business is building the digital infrastructure that brings buyers and sellers together. Each site in our portfolio is purpose-built for a specific insurance vertical, with expert content, comparison tools, and seamless adviser referral flows.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                All consumer referrals are handled by licensed insurance advisers and brokers operating under the Financial Markets Conduct Act 2013.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { icon: '🎯', title: 'Niche focus', body: 'Each site targets a single insurance vertical for maximum relevance and conversion.' },
+                { icon: '🔍', title: 'SEO-first', body: 'Authoritative content built to rank for high-intent queries in Google and AI search.' },
+                { icon: '✅', title: 'Licensed referrals', body: 'All consumer leads are passed to licensed NZ financial advisers and brokers.' },
+                { icon: '📈', title: 'Growing portfolio', body: 'We launch new sites regularly — expanding our reach across insurance categories.' },
+              ].map((item) => (
+                <div key={item.title} className="bg-green-50 rounded-2xl p-6 border border-green-100">
+                  <div className="text-3xl mb-3">{item.icon}</div>
+                  <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio */}
+      <section id="portfolio" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-extrabold text-gray-900 mb-4">Our portfolio</h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              {sites.length} live websites spanning {categories.length} insurance categories across New Zealand and international markets.
+            </p>
+          </div>
+
+          {/* Category legend */}
+          <div className="flex flex-wrap gap-2 justify-center mb-10">
+            {categories.map((cat) => {
+              const c = categoryColours[cat] || { bg: 'bg-gray-100', text: 'text-gray-700', border: 'border-gray-200' }
+              return (
+                <span key={cat} className={`text-xs font-bold px-3 py-1 rounded-full border ${c.bg} ${c.text} ${c.border}`}>
+                  {cat}
+                </span>
+              )
+            })}
+          </div>
+
+          {/* NZ Sites grid */}
+          <h3 className="text-xl font-bold text-gray-700 mb-6">🇳🇿 New Zealand</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
+            {nzSites.map((site) => {
+              const c = categoryColours[site.category] || { bg: 'bg-gray-100', text: 'text-gray-700', border: 'border-gray-200' }
+              return (
+                <a
+                  key={site.slug}
+                  href={site.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-white rounded-2xl border border-gray-200 hover:border-green-300 hover:shadow-md transition-all p-6 flex flex-col"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <span className={`text-xs font-bold px-2.5 py-1 rounded-full border ${c.bg} ${c.text} ${c.border}`}>
+                      {site.category}
+                    </span>
+                    <svg className="w-4 h-4 text-gray-300 group-hover:text-green-500 transition-colors mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </div>
+                  <h3 className="font-extrabold text-gray-900 group-hover:text-green-700 transition-colors mb-1 text-sm">
+                    {site.domain}
+                  </h3>
+                  <p className="text-xs text-green-600 font-semibold mb-3">{site.tagline}</p>
+                  <p className="text-gray-500 text-xs leading-relaxed flex-1">{site.description}</p>
+                  <div className="mt-4 pt-3 border-t border-gray-100">
+                    <span className="text-xs text-green-600 font-bold">Visit site →</span>
+                  </div>
+                </a>
+              )
+            })}
+          </div>
+
+          {/* International Sites */}
+          <h3 className="text-xl font-bold text-gray-700 mb-6">🌏 International</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {intlSites.map((site) => {
+              const c = categoryColours[site.category] || { bg: 'bg-gray-100', text: 'text-gray-700', border: 'border-gray-200' }
+              const flag = site.market === 'ZA' ? '🇿🇦' : site.market === 'UK' ? '🇬🇧' : '🌏'
+              return (
+                <a
+                  key={site.slug}
+                  href={site.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-white rounded-2xl border border-gray-200 hover:border-green-300 hover:shadow-md transition-all p-6 flex flex-col"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <span className={`text-xs font-bold px-2.5 py-1 rounded-full border ${c.bg} ${c.text} ${c.border}`}>
+                      {flag} {site.market}
+                    </span>
+                    <svg className="w-4 h-4 text-gray-300 group-hover:text-green-500 transition-colors mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </div>
+                  <h3 className="font-extrabold text-gray-900 group-hover:text-green-700 transition-colors mb-1 text-sm">
+                    {site.domain}
+                  </h3>
+                  <p className="text-xs text-green-600 font-semibold mb-3">{site.tagline}</p>
+                  <p className="text-gray-500 text-xs leading-relaxed flex-1">{site.description}</p>
+                  <div className="mt-4 pt-3 border-t border-gray-100">
+                    <span className="text-xs text-green-600 font-bold">Visit site →</span>
+                  </div>
+                </a>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Partners */}
+      <section id="partners" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-extrabold text-gray-900 mb-4">Partner with us</h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              We work with insurers, brokers and comparison platforms who want to reach motivated, high-intent insurance buyers.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 mb-14">
+            {partnerTypes.map((p) => (
+              <div key={p.title} className="text-center p-8 rounded-2xl bg-green-50 border border-green-100">
+                <div className="text-5xl mb-4">{p.icon}</div>
+                <h3 className="text-xl font-extrabold text-gray-900 mb-3">{p.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{p.body}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className="bg-green-600 rounded-3xl p-10 text-center text-white">
+            <h3 className="text-3xl font-extrabold mb-4">Ready to connect with NZ insurance buyers?</h3>
+            <p className="text-green-100 text-lg mb-8 max-w-xl mx-auto">
+              Get in touch to discuss partnership opportunities, lead referral arrangements, or white-label options.
+            </p>
+            <Link
+              href="/contact/"
+              className="inline-block bg-white text-green-700 hover:bg-green-50 font-bold px-10 py-4 rounded-xl transition-colors text-lg"
+            >
+              Get in touch →
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
