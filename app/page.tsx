@@ -18,19 +18,22 @@ const stats = [
 
 const partnerTypes = [
   {
-    icon: '🏢',
+    number: '01',
     title: 'Insurance Companies',
     body: 'Reach thousands of qualified buyers already searching for your products. We drive high-intent traffic to niche insurance verticals.',
+    stat: '25+ niche sites',
   },
   {
-    icon: '🤝',
+    number: '02',
     title: 'Insurance Brokers',
-    body: 'Receive warm, pre-qualified leads from consumers actively comparing cover options. We handle marketing — you handle the advice.',
+    body: 'Receive warm, pre-qualified leads from consumers actively comparing cover options. We handle the marketing — you handle the advice.',
+    stat: '50k+ monthly visitors',
   },
   {
-    icon: '📊',
+    number: '03',
     title: 'Comparison Platforms',
     body: 'White-label our traffic or co-brand specific sites. We\'re open to integration and revenue-share arrangements.',
+    stat: 'Revenue-share ready',
   },
 ]
 
@@ -248,36 +251,63 @@ export default function HomePage() {
       </section>
 
       {/* Partners */}
-      <section id="partners" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <h2 className="text-4xl font-extrabold text-gray-900 mb-4">Partner with us</h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              We work with insurers, brokers and comparison platforms who want to reach motivated, high-intent insurance buyers.
+      <section id="partners" className="py-24 bg-gray-950 relative overflow-hidden">
+        {/* Subtle background accent */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(22,163,74,0.12)_0%,_transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(22,163,74,0.08)_0%,_transparent_60%)]" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <span className="inline-block bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+              Work with us
+            </span>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-5">
+              Partner with Cover4You
+            </h2>
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+              We work with insurers, brokers and comparison platforms who want to reach motivated, high-intent insurance buyers across New Zealand.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 mb-14">
+
+          {/* Partner cards */}
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
             {partnerTypes.map((p) => (
-              <div key={p.title} className="text-center p-8 rounded-2xl bg-green-50 border border-green-100">
-                <div className="text-5xl mb-4">{p.icon}</div>
-                <h3 className="text-xl font-extrabold text-gray-900 mb-3">{p.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{p.body}</p>
+              <div key={p.title} className="relative group bg-gray-900 border border-gray-800 hover:border-green-500/50 rounded-2xl p-8 transition-all duration-300 hover:bg-gray-900/80">
+                {/* Green top accent line */}
+                <div className="absolute top-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-green-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                {/* Number */}
+                <div className="text-6xl font-black text-gray-800 group-hover:text-green-900 transition-colors leading-none mb-6 select-none">
+                  {p.number}
+                </div>
+                <h3 className="text-xl font-extrabold text-white mb-3">{p.title}</h3>
+                <p className="text-gray-400 leading-relaxed mb-6">{p.body}</p>
+                <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-bold px-3 py-1.5 rounded-full">
+                  <span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block" />
+                  {p.stat}
+                </div>
               </div>
             ))}
           </div>
 
-          {/* CTA */}
-          <div className="bg-green-600 rounded-3xl p-10 text-center text-white">
-            <h3 className="text-3xl font-extrabold mb-4">Ready to connect with NZ insurance buyers?</h3>
-            <p className="text-green-100 text-lg mb-8 max-w-xl mx-auto">
-              Get in touch to discuss partnership opportunities, lead referral arrangements, or white-label options.
-            </p>
-            <Link
-              href="/contact/"
-              className="inline-block bg-white text-green-700 hover:bg-green-50 font-bold px-10 py-4 rounded-xl transition-colors text-lg"
-            >
-              Get in touch →
-            </Link>
+          {/* CTA banner */}
+          <div className="relative rounded-3xl overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-green-600 to-green-700" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(255,255,255,0.08)_0%,_transparent_60%)]" />
+            <div className="relative px-10 py-14 text-center">
+              <h3 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
+                Ready to reach NZ insurance buyers?
+              </h3>
+              <p className="text-green-100/80 text-lg mb-10 max-w-xl mx-auto">
+                Get in touch to discuss partnership opportunities, lead referral arrangements, or white-label options.
+              </p>
+              <Link
+                href="/contact/"
+                className="inline-flex items-center gap-2 bg-white text-green-700 hover:bg-green-50 font-bold px-10 py-4 rounded-xl transition-colors text-lg shadow-xl shadow-black/20"
+              >
+                Get in touch <span aria-hidden>→</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
