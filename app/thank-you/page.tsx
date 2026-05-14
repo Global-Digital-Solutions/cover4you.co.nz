@@ -45,7 +45,7 @@ export default function ThankYouPage() {
             {[
               { step: '1', title: 'We review', body: 'Your message lands directly with our partnership team.' },
               { step: '2', title: 'We respond', body: 'Expect a reply within one business day — usually sooner.' },
-              { step: '3', title: 'We connect', body: 'We'll match you with the right sites and opportunities.' },
+              { step: '3', title: 'We connect', body: "We'll match you with the right sites and opportunities." },
             ].map((item) => (
               <div key={item.step} className="bg-gray-900 border border-gray-800 rounded-2xl p-5">
                 <div className="text-3xl font-black text-gray-700 leading-none mb-2">{item.step}</div>
