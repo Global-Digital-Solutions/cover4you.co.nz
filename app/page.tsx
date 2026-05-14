@@ -101,7 +101,7 @@ export default function HomePage() {
                 Who we are
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                Cover4You is a New Zealand digital publishing company specialising in insurance lead generation. We build and operate authoritative, niche insurance websites that rank for high-intent search queries and connect consumers with the right insurance solution to suit their needs. No fuss, no hard sell — just the right insurance for Kiwis.
+                Cover4You is a New Zealand digital publishing company built around one simple idea: helping Kiwis find the right insurance without the fuss. We build and operate a portfolio of authoritative, niche insurance websites — each one designed to cut through the noise and connect consumers with the cover that actually suits their needs.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
                 We don't sell insurance directly — our business is building the digital infrastructure that brings buyers and sellers together. Each site in our portfolio is purpose-built for a specific insurance vertical, with expert content, comparison tools, and seamless adviser referral flows.
