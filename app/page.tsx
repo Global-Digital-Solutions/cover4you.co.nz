@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { sites, categories, categoryColours } from '@/data/sites'
 
@@ -40,33 +41,44 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-green-900 via-green-800 to-green-700 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -translate-y-1/2 translate-x-1/2" />
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full translate-y-1/2 -translate-x-1/2" />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
-          <span className="inline-block bg-green-600/40 border border-green-400/40 text-green-200 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
-            Insurance Web Portfolio
-          </span>
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
-            Connecting NZ insurance buyers<br className="hidden md:block" /> with the right advice
-          </h1>
-          <p className="text-xl text-green-100 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Cover4You operates a growing portfolio of specialist insurance websites — each one a focused, high-intent destination that connects consumers with licensed NZ advisers and brokers.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="#portfolio" className="bg-white text-green-800 hover:bg-green-50 font-bold px-8 py-4 rounded-xl transition-colors text-lg">
-              View Our Sites
-            </Link>
-            <Link href="/contact/" className="border-2 border-white/60 hover:border-white text-white font-bold px-8 py-4 rounded-xl transition-colors text-lg">
-              Partner With Us
-            </Link>
+      <section className="relative min-h-[90vh] flex flex-col justify-between text-white overflow-hidden">
+        {/* Background photo — Auckland city aerial */}
+        <Image
+          src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=1920&q=80"
+          alt="Auckland city"
+          fill
+          className="object-cover object-center"
+          priority
+          unoptimized
+        />
+        {/* Dark overlay — heavier at bottom for stats readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/50 to-black/75" />
+
+        {/* Hero content */}
+        <div className="relative flex-1 flex items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 text-center w-full">
+            <span className="inline-block bg-white/10 border border-white/20 text-green-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-8">
+              Insurance Web Portfolio
+            </span>
+            <h1 className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg">
+              Connecting NZ insurance buyers<br className="hidden md:block" /> with the right advice
+            </h1>
+            <p className="text-xl text-white/85 max-w-2xl mx-auto mb-10 leading-relaxed">
+              Cover4You operates a growing portfolio of specialist insurance websites — each one a focused, high-intent destination that connects consumers with licensed NZ advisers and brokers.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="#portfolio" className="bg-green-500 hover:bg-green-400 text-white font-bold px-8 py-4 rounded-xl transition-colors text-lg shadow-lg">
+                View Our Sites
+              </Link>
+              <Link href="/contact/" className="bg-white/10 hover:bg-white/20 border border-white/40 text-white font-bold px-8 py-4 rounded-xl transition-colors text-lg backdrop-blur-sm">
+                Partner With Us
+              </Link>
+            </div>
           </div>
         </div>
 
         {/* Stats bar */}
-        <div className="relative border-t border-green-700/60 bg-green-900/40">
+        <div className="relative border-t border-white/10 bg-black/30 backdrop-blur-sm">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               {stats.map((s) => (

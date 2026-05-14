@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid md:grid-cols-4 gap-10 mb-10">
           <div className="md:col-span-2">
-            <Image src="/cover4you-logo.svg" alt="Cover4You" width={130} height={34} className="h-8 w-auto brightness-200 mb-4" />
+            <Image src="/cover4you-logo-white.svg" alt="Cover4You" width={160} height={40} className="h-9 w-auto mb-4" />
             <p className="text-sm leading-relaxed max-w-sm">
               Cover4You operates a portfolio of specialist insurance information and lead-generation websites across New Zealand and beyond. We connect insurance buyers with licensed advisers and brokers.
             </p>
