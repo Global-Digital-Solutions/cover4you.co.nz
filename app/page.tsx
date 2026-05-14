@@ -170,7 +170,7 @@ export default function HomePage() {
                   <div className="relative w-full h-40 bg-gray-100 overflow-hidden">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src={`https://image.thum.io/get/width/600/crop/400/noanimate/${site.url}`}
+                      src={`https://s.wordpress.com/mshots/v1/${encodeURIComponent(site.url)}?w=600&h=400`}
                       alt={`${site.domain} screenshot`}
                       className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
@@ -218,7 +218,7 @@ export default function HomePage() {
                   <div className="relative w-full h-40 bg-gray-100 overflow-hidden">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src={`https://image.thum.io/get/width/600/crop/400/noanimate/${site.url}`}
+                      src={`https://s.wordpress.com/mshots/v1/${encodeURIComponent(site.url)}?w=600&h=400`}
                       alt={`${site.domain} screenshot`}
                       className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
