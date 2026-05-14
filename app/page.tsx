@@ -161,23 +161,36 @@ export default function HomePage() {
                   href={site.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group bg-white rounded-2xl border border-gray-200 hover:border-green-300 hover:shadow-md transition-all p-6 flex flex-col"
+                  className="group bg-white rounded-2xl border border-gray-200 hover:border-green-300 hover:shadow-md transition-all flex flex-col overflow-hidden"
                 >
-                  <div className="flex items-start justify-between mb-4">
-                    <span className={`text-xs font-bold px-2.5 py-1 rounded-full border ${c.bg} ${c.text} ${c.border}`}>
-                      {site.category}
-                    </span>
-                    <svg className="w-4 h-4 text-gray-300 group-hover:text-green-500 transition-colors mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
+                  {/* Site screenshot */}
+                  <div className="relative w-full h-40 bg-gray-100 overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={`https://image.thum.io/get/width/600/crop/400/noanimate/${site.url}`}
+                      alt={`${site.domain} screenshot`}
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
-                  <h3 className="font-extrabold text-gray-900 group-hover:text-green-700 transition-colors mb-1 text-sm">
-                    {site.domain}
-                  </h3>
-                  <p className="text-xs text-green-600 font-semibold mb-3">{site.tagline}</p>
-                  <p className="text-gray-500 text-xs leading-relaxed flex-1">{site.description}</p>
-                  <div className="mt-4 pt-3 border-t border-gray-100">
-                    <span className="text-xs text-green-600 font-bold">Visit site →</span>
+                  <div className="p-5 flex flex-col flex-1">
+                    <div className="flex items-start justify-between mb-3">
+                      <span className={`text-xs font-bold px-2.5 py-1 rounded-full border ${c.bg} ${c.text} ${c.border}`}>
+                        {site.category}
+                      </span>
+                      <svg className="w-4 h-4 text-gray-300 group-hover:text-green-500 transition-colors mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </div>
+                    <h3 className="font-extrabold text-gray-900 group-hover:text-green-700 transition-colors mb-1 text-sm">
+                      {site.domain}
+                    </h3>
+                    <p className="text-xs text-green-600 font-semibold mb-2">{site.tagline}</p>
+                    <p className="text-gray-500 text-xs leading-relaxed flex-1">{site.description}</p>
+                    <div className="mt-4 pt-3 border-t border-gray-100">
+                      <span className="text-xs text-green-600 font-bold">Visit site →</span>
+                    </div>
                   </div>
                 </a>
               )
@@ -196,23 +209,36 @@ export default function HomePage() {
                   href={site.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group bg-white rounded-2xl border border-gray-200 hover:border-green-300 hover:shadow-md transition-all p-6 flex flex-col"
+                  className="group bg-white rounded-2xl border border-gray-200 hover:border-green-300 hover:shadow-md transition-all flex flex-col overflow-hidden"
                 >
-                  <div className="flex items-start justify-between mb-4">
-                    <span className={`text-xs font-bold px-2.5 py-1 rounded-full border ${c.bg} ${c.text} ${c.border}`}>
-                      {flag} {site.market}
-                    </span>
-                    <svg className="w-4 h-4 text-gray-300 group-hover:text-green-500 transition-colors mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
+                  {/* Site screenshot */}
+                  <div className="relative w-full h-40 bg-gray-100 overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={`https://image.thum.io/get/width/600/crop/400/noanimate/${site.url}`}
+                      alt={`${site.domain} screenshot`}
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
-                  <h3 className="font-extrabold text-gray-900 group-hover:text-green-700 transition-colors mb-1 text-sm">
-                    {site.domain}
-                  </h3>
-                  <p className="text-xs text-green-600 font-semibold mb-3">{site.tagline}</p>
-                  <p className="text-gray-500 text-xs leading-relaxed flex-1">{site.description}</p>
-                  <div className="mt-4 pt-3 border-t border-gray-100">
-                    <span className="text-xs text-green-600 font-bold">Visit site →</span>
+                  <div className="p-5 flex flex-col flex-1">
+                    <div className="flex items-start justify-between mb-3">
+                      <span className={`text-xs font-bold px-2.5 py-1 rounded-full border ${c.bg} ${c.text} ${c.border}`}>
+                        {flag} {site.market}
+                      </span>
+                      <svg className="w-4 h-4 text-gray-300 group-hover:text-green-500 transition-colors mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </div>
+                    <h3 className="font-extrabold text-gray-900 group-hover:text-green-700 transition-colors mb-1 text-sm">
+                      {site.domain}
+                    </h3>
+                    <p className="text-xs text-green-600 font-semibold mb-2">{site.tagline}</p>
+                    <p className="text-gray-500 text-xs leading-relaxed flex-1">{site.description}</p>
+                    <div className="mt-4 pt-3 border-t border-gray-100">
+                      <span className="text-xs text-green-600 font-bold">Visit site →</span>
+                    </div>
                   </div>
                 </a>
               )
