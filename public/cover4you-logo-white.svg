@@ -1,21 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 52" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 56" fill="none">
   <!-- Icon: interconnected nodes -->
-  <circle cx="26" cy="26" r="5" fill="#4ade80"/>
-  <circle cx="26" cy="10" r="3.5" fill="#4ade80" opacity="0.85"/>
-  <circle cx="40" cy="18" r="3.5" fill="#4ade80" opacity="0.85"/>
-  <circle cx="40" cy="34" r="3.5" fill="#4ade80" opacity="0.85"/>
-  <circle cx="26" cy="42" r="3.5" fill="#4ade80" opacity="0.85"/>
-  <circle cx="12" cy="34" r="3.5" fill="#4ade80" opacity="0.85"/>
-  <circle cx="12" cy="18" r="3.5" fill="#4ade80" opacity="0.85"/>
-  <line x1="26" y1="21" x2="26" y2="13.5" stroke="#4ade80" stroke-width="1.5" opacity="0.5"/>
-  <line x1="30.3" y1="23.5" x2="36.8" y2="20.5" stroke="#4ade80" stroke-width="1.5" opacity="0.5"/>
-  <line x1="30.3" y1="28.5" x2="36.8" y2="31.5" stroke="#4ade80" stroke-width="1.5" opacity="0.5"/>
-  <line x1="26" y1="31" x2="26" y2="38.5" stroke="#4ade80" stroke-width="1.5" opacity="0.5"/>
-  <line x1="21.7" y1="28.5" x2="15.2" y2="31.5" stroke="#4ade80" stroke-width="1.5" opacity="0.5"/>
-  <line x1="21.7" y1="23.5" x2="15.2" y2="20.5" stroke="#4ade80" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="27" cy="27" r="5.5" fill="#4ade80"/>
+  <circle cx="27" cy="10" r="3.8" fill="#4ade80" opacity="0.85"/>
+  <circle cx="42" cy="18.5" r="3.8" fill="#4ade80" opacity="0.85"/>
+  <circle cx="42" cy="35.5" r="3.8" fill="#4ade80" opacity="0.85"/>
+  <circle cx="27" cy="44" r="3.8" fill="#4ade80" opacity="0.85"/>
+  <circle cx="12" cy="35.5" r="3.8" fill="#4ade80" opacity="0.85"/>
+  <circle cx="12" cy="18.5" r="3.8" fill="#4ade80" opacity="0.85"/>
+  <line x1="27" y1="21.5" x2="27" y2="13.8" stroke="#4ade80" stroke-width="1.5" opacity="0.45"/>
+  <line x1="31.7" y1="24.5" x2="38.4" y2="21.3" stroke="#4ade80" stroke-width="1.5" opacity="0.45"/>
+  <line x1="31.7" y1="29.5" x2="38.4" y2="32.7" stroke="#4ade80" stroke-width="1.5" opacity="0.45"/>
+  <line x1="27" y1="32.5" x2="27" y2="40.2" stroke="#4ade80" stroke-width="1.5" opacity="0.45"/>
+  <line x1="22.3" y1="29.5" x2="15.6" y2="32.7" stroke="#4ade80" stroke-width="1.5" opacity="0.45"/>
+  <line x1="22.3" y1="24.5" x2="15.6" y2="21.3" stroke="#4ade80" stroke-width="1.5" opacity="0.45"/>
   <!-- Wordmark white -->
-  <text x="58" y="31" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="22" fill="#ffffff" letter-spacing="-0.8">Cover</text>
-  <text x="114" y="31" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="22" fill="#4ade80" letter-spacing="-0.8">4</text>
-  <text x="128" y="31" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="22" fill="#ffffff" letter-spacing="-0.8">You</text>
-  <text x="59" y="44" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="500" font-size="8.5" fill="rgba(255,255,255,0.55)" letter-spacing="2">INSURANCE PORTFOLIO</text>
+  <text x="61" y="33" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="24" letter-spacing="-0.5">
+    <tspan fill="#ffffff">Cover</tspan><tspan fill="#4ade80">4</tspan><tspan fill="#ffffff">You</tspan>
+  </text>
+  <!-- Tagline -->
+  <text x="62" y="47" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-weight="500" font-size="8.5" fill="rgba(255,255,255,0.5)" letter-spacing="2">INSURANCE PORTFOLIO</text>
 </svg>
