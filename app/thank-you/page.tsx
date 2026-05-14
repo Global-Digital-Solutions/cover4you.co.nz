@@ -78,7 +78,7 @@ export default function ThankYouPage() {
                 className="group bg-white rounded-2xl border border-gray-200 hover:border-green-300 hover:shadow-lg transition-all flex flex-col overflow-hidden"
               >
                 {/* Screenshot */}
-                <div className="relative w-full h-36 bg-gray-100 overflow-hidden">
+                <div className="relative w-full h-56 bg-gray-100 overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={`/api/screenshot?url=${encodeURIComponent(site.url)}`}
