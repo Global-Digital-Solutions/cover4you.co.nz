@@ -1,10 +1,7 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
@@ -47,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       </head>
-      <body className={`${inter.className} bg-white text-gray-900`}>
+      <body className="bg-white text-gray-900" style={{ fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif" }}>
         <Header />
         <main>{children}</main>
         <Footer />

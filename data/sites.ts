@@ -9,7 +9,7 @@ export interface Site {
   market: string
   logo?: string
   cardImage?: string
-  status: 'live' | 'building'
+  status?: 'live' | 'building'
 }
 
 export const sites: Site[] = [
