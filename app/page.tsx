@@ -64,7 +64,7 @@ export default function HomePage() {
               Insurance Web Portfolio
             </span>
             <h1 className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg">
-              Connecting NZ insurance buyers<br className="hidden md:block" /> with the right advice
+              Connecting insurance buyers<br className="hidden md:block" /> with the right advice
             </h1>
             <p className="text-xl text-white/85 max-w-2xl mx-auto mb-10 leading-relaxed">
               Cover4You operates a growing portfolio of specialist insurance websites — each one a focused, high-intent destination that connects consumers with licensed NZ advisers, brokers and insurers.
