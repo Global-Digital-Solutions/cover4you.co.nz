@@ -10,7 +10,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/cover4you-logo.svg" alt="Cover4You" width={140} height={36} className="h-9 w-auto" />
+            <Image src="/cover4you-logo.svg" alt="Cover4You" width={168} height={43} className="h-11 w-auto" />
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
             <Link href="/#portfolio" className="hover:text-green-600 transition-colors">Our Sites</Link>
