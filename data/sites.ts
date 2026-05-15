@@ -275,31 +275,10 @@ export const sites: Site[] = [
     category: 'Business',
     market: 'NZ',
   },
-  // International
-  {
-    slug: 'yacht-insurance-za',
-    name: 'YachtInsurance.co.za',
-    url: 'https://www.yachtinsurance.co.za',
-    domain: 'yachtinsurance.co.za',
-    tagline: 'SA Yacht & Boat Insurance',
-    description: 'South Africa\'s specialist yacht insurance comparison site. Hull, third party, and offshore passage cover for SA sailors.',
-    category: 'Marine',
-    market: 'ZA',
-  },
-  {
-    slug: 'yacht-insurance-uk',
-    name: 'YachtInsurance.co.uk',
-    url: 'https://www.yachtinsurance.co.uk',
-    domain: 'yachtinsurance.co.uk',
-    tagline: 'UK Yacht & Boat Insurance',
-    description: 'UK yacht insurance comparison and broker referral. RYA-approved cover, marina liability, and blue water cruising policies.',
-    category: 'Marine',
-    market: 'UK',
-  },
 ]
 
 export const categories = [...new Set(sites.map((s) => s.category))].sort()
-export const markets = ['NZ', 'ZA', 'UK']
+export const markets = ['NZ']
 
 export const categoryColours: Record<string, { bg: string; text: string; border: string }> = {
   Business:   { bg: 'bg-blue-50',   text: 'text-blue-700',   border: 'border-blue-200' },
