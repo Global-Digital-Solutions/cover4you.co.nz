@@ -20,20 +20,20 @@ const partnerTypes = [
   {
     number: '01',
     title: 'Insurance Companies',
-    body: 'Reach thousands of qualified buyers already searching for your products. We drive high-intent traffic to niche insurance verticals.',
-    stat: '25+ niche sites',
+    body: 'Reach thousands of qualified buyers already searching for your products. We drive high-intent traffic across 30+ niche insurance verticals in New Zealand and international markets.',
+    stat: '30+ niche sites',
   },
   {
     number: '02',
     title: 'Insurance Brokers',
-    body: 'Receive warm, pre-qualified leads from consumers actively comparing cover options. We handle the marketing — you handle the advice.',
-    stat: '50k+ monthly visitors',
+    body: 'Receive warm, pre-qualified leads from consumers actively comparing cover options across 7 countries. We handle the marketing — you handle the advice.',
+    stat: '60k+ monthly visitors',
   },
   {
     number: '03',
     title: 'Comparison Platforms',
-    body: 'White-label our traffic or co-brand specific sites. We\'re open to integration and revenue-share arrangements.',
-    stat: 'Revenue-share ready',
+    body: 'White-label our traffic or co-brand specific sites across New Zealand, South Africa, Asia and beyond. We\'re open to integration and revenue-share arrangements.',
+    stat: '7 countries & growing',
   },
 ]
 
@@ -276,7 +276,7 @@ export default function HomePage() {
               Partner with Cover4You
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
-              We work with insurers, brokers and comparison platforms who want to reach motivated, high-intent insurance buyers across New Zealand.
+              We work with insurers, brokers and comparison platforms who want to reach motivated, high-intent insurance buyers across New Zealand, South Africa, Asia Pacific and beyond.
             </p>
           </div>
 
@@ -306,10 +306,10 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(255,255,255,0.08)_0%,_transparent_60%)]" />
             <div className="relative px-10 py-14 text-center">
               <h3 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
-                Ready to reach NZ insurance buyers?
+                Ready to reach insurance buyers across the Southern Hemisphere?
               </h3>
               <p className="text-green-100/80 text-lg mb-10 max-w-xl mx-auto">
-                Get in touch to discuss partnership opportunities, lead referral arrangements, or white-label options.
+                Get in touch to discuss partnership opportunities, lead referral arrangements, or white-label options across our 7-country portfolio.
               </p>
               <Link
                 href="/contact/"
