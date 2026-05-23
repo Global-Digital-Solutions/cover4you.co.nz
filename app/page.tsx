@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 }
 
 const stats = [
-  { value: '25+', label: 'Live websites' },
+  { value: '30+', label: 'Live websites' },
   { value: '3', label: 'Countries' },
   { value: '50k+', label: 'Monthly visitors' },
   { value: '100%', label: 'NZ-focused' },
@@ -205,7 +205,7 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {intlSites.map((site) => {
               const c = categoryColours[site.category] || { bg: 'bg-gray-100', text: 'text-gray-700', border: 'border-gray-200' }
-              const flag = site.market === 'ZA' ? '🇿🇦' : site.market === 'UK' ? '🇬🇧' : '🌏'
+              const flag = site.market === 'ZA' ? '🇿🇦' : site.market === 'UK' ? '🇬🇧' : site.market === 'ASIA' ? '🌏' : '🌐'
               return (
                 <a
                   key={site.slug}
@@ -246,6 +246,16 @@ export default function HomePage() {
                 </a>
               )
             })}
+            {/* Coming soon placeholder */}
+            <div className="bg-white rounded-2xl border border-dashed border-gray-300 flex flex-col items-center justify-center p-10 text-center min-h-[280px]">
+              <div className="w-12 h-12 rounded-full bg-green-50 border border-green-100 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+              <p className="text-sm font-bold text-gray-700 mb-1">More international sites</p>
+              <p className="text-xs text-gray-400 leading-relaxed">We're actively expanding into new markets. More international sites launching soon.</p>
+            </div>
           </div>
         </div>
       </section>

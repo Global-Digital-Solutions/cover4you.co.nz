@@ -275,10 +275,71 @@ export const sites: Site[] = [
     category: 'Business',
     market: 'NZ',
   },
+  {
+    slug: 'indemnity-insurance',
+    name: 'IndemnityInsurance.co.nz',
+    url: 'https://www.indemnityinsurance.co.nz',
+    domain: 'indemnityinsurance.co.nz',
+    tagline: 'Professional Indemnity Insurance',
+    description: 'Professional indemnity and liability insurance for NZ professionals — accountants, engineers, IT consultants, financial advisers and more. Broker referral to licensed NZ advisers.',
+    category: 'Business',
+    market: 'NZ',
+  },
+  {
+    slug: 'pet-protection',
+    name: 'PetProtection.co.nz',
+    url: 'https://www.petprotection.co.nz',
+    domain: 'petprotection.co.nz',
+    tagline: 'Pet Insurance Comparison',
+    description: 'Compare pet insurance for dogs, cats, rabbits and more from leading NZ providers — Southern Cross, SPCA, PD Insurance, Petcover and others.',
+    category: 'Pet',
+    market: 'NZ',
+  },
+  {
+    slug: 'fraud-insurance',
+    name: 'FraudInsurance.co.nz',
+    url: 'https://www.fraudinsurance.co.nz',
+    domain: 'fraudinsurance.co.nz',
+    tagline: 'Fraud & Crime Insurance',
+    description: 'NZ fraud protection hub — personal fraud prevention resources and commercial fraud insurance for businesses. Covers identity theft, social engineering and commercial crime.',
+    category: 'Business',
+    market: 'NZ',
+  },
+  // International sites
+  {
+    slug: 'yacht-insurance-za',
+    name: 'YachtInsurance.co.za',
+    url: 'https://www.yachtinsurance.co.za',
+    domain: 'yachtinsurance.co.za',
+    tagline: 'Yacht & Boat Insurance South Africa',
+    description: 'Specialist yacht and sailboat insurance for South African sailors. Hull and machinery, third party liability and personal accident cover.',
+    category: 'Marine',
+    market: 'ZA',
+  },
+  {
+    slug: 'boat-insurance-za',
+    name: 'BoatInsurance.co.za',
+    url: 'https://www.boatinsurance.co.za',
+    domain: 'boatinsurance.co.za',
+    tagline: 'Boat & Watercraft Insurance South Africa',
+    description: 'Comprehensive boat insurance for South African boat owners — powerboats, fishing boats, jet skis and leisure craft. Hull, liability and trailer cover.',
+    category: 'Marine',
+    market: 'ZA',
+  },
+  {
+    slug: 'yacht-insurance-asia',
+    name: 'YachtInsurance.asia',
+    url: 'https://www.yachtinsurance.asia',
+    domain: 'yachtinsurance.asia',
+    tagline: 'Yacht Insurance Asia Pacific',
+    description: 'Yacht and sailing vessel insurance across Asia Pacific — covering Singapore, Hong Kong, Thailand, Indonesia, Philippines, Malaysia, Australia and New Zealand.',
+    category: 'Marine',
+    market: 'ASIA',
+  },
 ]
 
 export const categories = [...new Set(sites.map((s) => s.category))].sort()
-export const markets = ['NZ']
+export const markets = ['NZ', 'ZA', 'ASIA']
 
 export const categoryColours: Record<string, { bg: string; text: string; border: string }> = {
   Business:   { bg: 'bg-blue-50',   text: 'text-blue-700',   border: 'border-blue-200' },
