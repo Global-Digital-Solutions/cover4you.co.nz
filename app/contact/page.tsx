@@ -109,13 +109,16 @@ export default function ContactPage() {
                 <p className="text-gray-500 text-sm mb-6">Fill in the form and we'll be in touch shortly.</p>
 
                 <form
-                  action="https://formsubmit.co/hello@cover4you.co.nz"
+                  action="https://shiny-bush-41cd.darinbutler.workers.dev"
                   method="POST"
                   className="space-y-5"
                 >
+                  <input type="hidden" name="_cc" value="hello@cover4you.co.nz" />
                   <input type="hidden" name="_subject" value="Cover4You Partnership Enquiry" />
                   <input type="hidden" name="_next" value="https://www.cover4you.co.nz/thank-you/" />
                   <input type="hidden" name="_captcha" value="false" />
+                  {/* Honeypot spam trap */}
+                  <input type="text" name="_honey" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
 
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
