@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 
 const stats = [
   { value: '30+', label: 'Live websites' },
-  { value: '3', label: 'Countries' },
-  { value: '50k+', label: 'Monthly visitors' },
-  { value: '100%', label: 'NZ-focused' },
+  { value: '7', label: 'Countries' },
+  { value: '60k+', label: 'Monthly visitors' },
+  { value: '100%', label: 'Southern Hemisphere-focused' },
 ]
 
 const partnerTypes = [
