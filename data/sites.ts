@@ -305,6 +305,26 @@ export const sites: Site[] = [
     category: 'Business',
     market: 'NZ',
   },
+  {
+    slug: 'company-insurance',
+    name: 'CompanyInsurance.co.nz',
+    url: 'https://www.companyinsurance.co.nz',
+    domain: 'companyinsurance.co.nz',
+    tagline: 'Commercial Business Insurance',
+    description: 'Business insurance for NZ companies — public liability, professional indemnity, statutory liability, commercial property, cyber and directors & officers cover. Broker referral to licensed NZ advisers.',
+    category: 'Business',
+    market: 'NZ',
+  },
+  {
+    slug: 'sole-trader-insurance',
+    name: 'SoleTraderInsurance.co.nz',
+    url: 'https://www.soletraderinsurance.co.nz',
+    domain: 'soletraderinsurance.co.nz',
+    tagline: 'Sole Trader & Self-Employed Insurance',
+    description: 'Specialist insurance for NZ sole traders and self-employed — public liability, professional indemnity, income protection, tools & equipment and more. Adviser referral service.',
+    category: 'Business',
+    market: 'NZ',
+  },
   // International sites
   {
     slug: 'yacht-insurance-za',

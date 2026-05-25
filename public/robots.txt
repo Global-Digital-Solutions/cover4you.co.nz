@@ -3,16 +3,35 @@ Allow: /
 Disallow: /thank-you/
 Disallow: /api/
 
+# Googlebot — crawl all public pages
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /thank-you/
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /thank-you/
+
+# AI training crawlers — blocked
 User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
 Disallow: /
 
 User-agent: anthropic-ai
 Disallow: /
 
-User-agent: ClaudeBot
+User-agent: Claude-Web
 Disallow: /
 
-User-agent: CCBot
+User-agent: ClaudeBot
 Disallow: /
 
 User-agent: Google-Extended
@@ -20,5 +39,30 @@ Disallow: /
 
 User-agent: Meta-ExternalAgent
 Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+# SEO crawlers — allowed
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
 
 Sitemap: https://www.cover4you.co.nz/sitemap.xml

@@ -10,18 +10,18 @@ export const metadata: Metadata = {
 }
 
 const stats = [
-  { value: '30+', label: 'Live websites' },
+  { value: '35+', label: 'Live websites' },
   { value: '7', label: 'Countries' },
   { value: '60k+', label: 'Monthly visitors' },
-  { value: '100%', label: 'Southern Hemisphere-focused' },
+  { value: '3', label: 'Markets & growing' },
 ]
 
 const partnerTypes = [
   {
     number: '01',
     title: 'Insurance Companies',
-    body: 'Reach thousands of qualified buyers already searching for your products. We drive high-intent traffic across 30+ niche insurance verticals in New Zealand and international markets.',
-    stat: '30+ niche sites',
+    body: 'Reach thousands of qualified buyers already searching for your products. We drive high-intent traffic across 35+ niche insurance verticals in New Zealand and international markets.',
+    stat: '35+ niche sites',
   },
   {
     number: '02',
@@ -137,7 +137,7 @@ export default function HomePage() {
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold text-gray-900 mb-4">Our portfolio</h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              {sites.length} live websites spanning {categories.length} insurance categories across New Zealand and international markets.
+              {sites.length} live websites spanning {categories.length} insurance categories across New Zealand, South Africa and Asia Pacific.
             </p>
           </div>
 
