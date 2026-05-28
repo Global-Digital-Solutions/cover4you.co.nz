@@ -325,6 +325,26 @@ export const sites: Site[] = [
     category: 'Business',
     market: 'NZ',
   },
+  {
+    slug: 'hgv-insurance',
+    name: 'HGVInsurance.co.nz',
+    url: 'https://www.hgvinsurance.co.nz',
+    domain: 'hgvinsurance.co.nz',
+    tagline: 'HGV & Truck Insurance',
+    description: 'Specialist heavy goods vehicle and truck insurance for NZ operators — covering rigid trucks, articulated units, tippers, tankers and fleet operations. Broker referral to licensed NZ advisers.',
+    category: 'Vehicle',
+    market: 'NZ',
+  },
+  {
+    slug: 'gadget-insurance',
+    name: 'GadgetInsurance.co.nz',
+    url: 'https://www.gadgetinsurance.co.nz',
+    domain: 'gadgetinsurance.co.nz',
+    tagline: 'Gadget & Device Insurance',
+    description: 'Compare gadget insurance for smartphones, laptops, tablets, cameras, drones and more from leading NZ providers — AppleCare+, Samsung Care+, AA Insurance, State, Tower and Coverdrone.',
+    category: 'Specialist',
+    market: 'NZ',
+  },
   // International sites
   {
     slug: 'yacht-insurance-za',
