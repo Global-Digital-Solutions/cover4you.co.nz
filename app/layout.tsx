@@ -56,6 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en-NZ">
       <head>
         <meta name="verify-admitad" content="09e0253587" />
+        <meta name="fo-verify" content="02cacda6-ed08-436f-b715-0d74d2b80839" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       </head>
       <body className="bg-white text-gray-900" style={{ fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif" }}>
