@@ -345,6 +345,16 @@ export const sites: Site[] = [
     category: 'Specialist',
     market: 'NZ',
   },
+  {
+    slug: 'winter-sports-insurance',
+    name: 'WinterSportsInsurance.co.nz',
+    url: 'https://www.wintersportsinsurance.co.nz',
+    domain: 'wintersportsinsurance.co.nz',
+    tagline: 'Ski & Winter Sports Insurance',
+    description: 'Compare ski and winter sports travel insurance from 7 specialist providers. Cover for skiing, snowboarding, heli-skiing, off-piste and mountain adventures at NZ and international resorts.',
+    category: 'Travel',
+    market: 'NZ',
+  },
   // International sites
   {
     slug: 'yacht-insurance-za',
