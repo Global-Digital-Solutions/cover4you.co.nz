@@ -355,6 +355,16 @@ export const sites: Site[] = [
     category: 'Travel',
     market: 'NZ',
   },
+  {
+    slug: 'cancer-travel-insurance',
+    name: 'CancerTravelInsurance.co.nz',
+    url: 'https://www.cancertravelinsurance.co.nz',
+    domain: 'cancertravelinsurance.co.nz',
+    tagline: 'Travel Insurance for Cancer Patients',
+    description: 'Compare NZ travel insurance providers for Kiwis with cancer. Covers breast cancer, prostate cancer, melanoma, bowel cancer and more — in remission, during treatment or historically diagnosed.',
+    category: 'Health',
+    market: 'NZ',
+  },
   // International sites
   {
     slug: 'yacht-insurance-za',
