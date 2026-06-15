@@ -13,7 +13,7 @@ const stats = [
   { value: '40+', label: 'Live websites' },
   { value: '7', label: 'Countries' },
   { value: '60k+', label: 'Monthly visitors' },
-  { value: '3', label: 'Markets & growing' },
+  { value: '9', label: 'Categories & growing' },
 ]
 
 const partnerTypes = [
