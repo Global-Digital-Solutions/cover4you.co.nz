@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 }
 
 const stats = [
-  { value: '35+', label: 'Live websites' },
+  { value: '40+', label: 'Live websites' },
   { value: '7', label: 'Countries' },
   { value: '60k+', label: 'Monthly visitors' },
   { value: '3', label: 'Markets & growing' },
@@ -20,8 +20,8 @@ const partnerTypes = [
   {
     number: '01',
     title: 'Insurance Companies',
-    body: 'Reach thousands of qualified buyers already searching for your products. We drive high-intent traffic across 35+ niche insurance verticals in New Zealand and international markets.',
-    stat: '35+ niche sites',
+    body: 'Reach thousands of qualified buyers already searching for your products. We drive high-intent traffic across 40+ niche insurance verticals in New Zealand and international markets.',
+    stat: '40+ niche sites',
   },
   {
     number: '02',
