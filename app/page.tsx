@@ -107,17 +107,17 @@ export default function HomePage() {
                 Cover4You is a New Zealand owned digital publishing company built around one simple idea: helping Kiwis find the right insurance without the fuss. We build and operate a portfolio of authoritative, niche insurance websites — each one designed to cut through the noise and connect consumers with the cover that actually suits their needs.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                We don't sell insurance directly — our business is building the digital infrastructure that brings buyers and sellers together. Each site in our portfolio is purpose-built for a specific insurance vertical, with expert content, comparison tools, and seamless adviser referral flows.
+                We don't sell insurance directly — our business is building the digital infrastructure that brings buyers and sellers together. Each site in our portfolio is purpose-built for a specific insurance vertical, with expert content, comparison tools, and seamless referrals to brokers, partner advisers and direct insurers.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                All consumer referrals are handled by licensed insurance advisers and brokers operating under the Financial Markets Conduct Act 2013.
+                Consumer enquiries are referred to licensed NZ brokers, adviser partners and, where appropriate, directly to insurers.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
                 { icon: '🎯', title: 'Niche focus', body: 'Each site targets a single insurance vertical for maximum relevance and conversion.' },
                 { icon: '🔍', title: 'SEO-first', body: 'Authoritative content built to rank for high-intent queries in Google and AI search.' },
-                { icon: '✅', title: 'Licensed referrals', body: 'All consumer leads are passed to licensed NZ financial advisers and brokers.' },
+                { icon: '✅', title: 'Licensed referrals', body: 'Consumer enquiries are referred to licensed NZ brokers, adviser partners and direct insurers.' },
                 { icon: '📈', title: 'Growing portfolio', body: 'We launch new sites regularly — expanding our reach across insurance categories.' },
               ].map((item) => (
                 <div key={item.title} className="bg-green-50 rounded-2xl p-6 border border-green-100">
